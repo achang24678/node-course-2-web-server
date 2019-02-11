@@ -2,8 +2,9 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const port = process.env.PORT || 3000;
-var app = express();
+const port = process.env.PORT || 3000; //set port number, usually localhost 3000 for testing
+
+var app = express(); //use express; express start
 
 hbs.registerPartials(__dirname + '/views/partials') //take the dir you want to use for all of your handlebar partial files
 app.set('view engine', 'hbs');  //set up view engine
